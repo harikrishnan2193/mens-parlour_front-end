@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+}  
+.parallax-section {
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+  
+
+#section1 {
+    background-image: url('../Images/barber.jpg');
+}
+
+#section2 {
+    background-image: url('../Images/chair2.jpg');
+}
+
+#section3 {
+    background-image: url('../Images/scissors.jpg');
+}
+@media screen and (max-width:770px){
+    .parallax-section {
+        height: 100vh;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+    
+}
