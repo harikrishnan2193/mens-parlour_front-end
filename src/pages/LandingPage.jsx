@@ -5,8 +5,37 @@ import Services from '../components/Services';
 import Scroll from '../components/Scroll';
 import Cres from '../components/Cres';
 import { Link } from 'react-scroll';
+import Swal from 'sweetalert2';
+import 'animate.css';
+import { useNavigate } from 'react-router-dom';
+
 
 function LandingPage() {
+
+  //for navigat to login page
+  const navigate = useNavigate();
+
+  //function for login alert box
+  const login = (event) =>{
+    //event for prevent the default behavior of anchor tag without removing the "href" attribute
+    event.preventDefault();
+    Swal.fire({
+      title: "Welcome back! Please login to continue your journey.",
+      showCancelButton: true,
+      confirmButtonText: "Login",
+      confirmButtonColor: "rgb(192, 112, 167)", // Custom color for the login button
+      showClass: {
+        popup: 'animate__animated animate__fadeInUp animate__faster'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutDown animate__faster'
+      },
+    }).then((result) => {
+      if (result.isConfirmed) {
+        navigate('/login'); 
+      }
+    });
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,8 +62,8 @@ function LandingPage() {
             <h1>Custom Barbering For The Modern Man</h1>
             <p>Expert grooming, premier service, and a shot of confidence. More than just a haircut.</p>
             <div className="banner-btn">
-                <a href="#"><span></span>Book Now</a>
-                <a href="#"><span></span>Know More</a>
+                <a onClick={login} href=""><span></span>Book Now</a>
+                <Link to='about' href=""><span></span>Know More</Link>
             </div>
         </div>
        </div>
@@ -42,7 +71,7 @@ function LandingPage() {
 
       {/* section2 */}
       <div className="side-Nav">
-         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars fa-fade"></i></button>
+         <button class="btn btn-primary" id='btn' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars fa-fade"></i></button>
 
          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
           <div class="offcanvas-header">

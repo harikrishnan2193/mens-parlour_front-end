@@ -1,0 +1,103 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.bg-image {
+    background-image: url(../Images/chair3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0px 0px 10px;
+    height: 51vh;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.bg-image-large {
+    background-image: url(../Images/chair3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0px 0px 10px;
+    height: 62vh;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.bg-image p{
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+}
+.bg-image-large p{
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+}
+.login-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: #333333;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #adadad;
+    outline: none;
+    color: #333333;
+    font-size: 16px;
+}
+.input-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #adadad;
+}
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #da16c3;
+    font-size: 12px;
+}
+/* Login Button */
+.login-btn {
+    width: 100%;
+    background: #da16c3;
+    border: none;
+    padding: 15px 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login-btn:hover {
+    background: #ee4be8;
+    transition: 0.8s;
+}
+@media (max-width: 768px) {
+    .bg-image {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .login-box {
+        border-radius: 0px 0px 10px 10px;
+    }
+    .login-container {
+        background: linear-gradient(rgb(192, 112, 167),white);
+    }
+}
