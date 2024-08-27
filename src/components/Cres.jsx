@@ -43,4 +43,4 @@ function Cres() {
   )
 }
 
-export default Cres
+export default Cres;
