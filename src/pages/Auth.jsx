@@ -26,9 +26,9 @@ function Auth({ register }) {
                         </h4>
                         <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illum quos, id dicta dolore iure consequuntur accusantium quibusdam optio deserunt, corporis sapiente qui. Amet dignissimos tempore dolor adipisci, natus id.</p>
                         {registerPage ?
-                            <Link to={'/login'}><button className='btn btn-outline-light mt-2 rounded-pill '>SIGN UP</button></Link>
+                            <Link to={'/login'}><button className='btn btn-outline-light mt-2 rounded-pill '>LOGIN</button></Link>
                             :
-                            <Link to={'/register'}><button className='btn btn-outline-light mt-2 rounded-pill '>LOGIN</button></Link>
+                            <Link to={'/register'}><button className='btn btn-outline-light mt-2 rounded-pill '>SIGN UP</button></Link>
                         }
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12 login-box animate">

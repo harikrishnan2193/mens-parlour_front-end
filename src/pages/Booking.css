@@ -1,0 +1,121 @@
+.shape {
+    aspect-ratio: 1 / 1;
+}
+
+.green {
+    background-color: #33b18a;
+    border-radius: 40px 0;
+}
+
+.navy {
+    background-color: #1A365D;
+    border-radius: 70px 0 70px 70px;
+}
+
+.navy-bottom {
+    background-color: #1A365D;
+    border-radius: 0 0 0 50px;
+}
+
+.purple {
+    background-color: #5a4896;
+    border-radius: 70px;
+}
+
+.blue {
+    background-color: #5ac6fa;
+    border-radius: 40px 0;
+}
+
+
+.flower {
+    position: relative;
+}
+
+.flower:before {
+    content: '✿';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+}
+
+.image-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 140px;
+    border-radius: 50px 0;
+}
+
+.column-right h1 {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.column-right span {
+    color: chocolate;
+}
+
+/* animation column-right */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) rotate(15deg);
+        transform-origin: left;
+    }
+
+    40% {
+        opacity: 0.2;
+        transform: translateY(5px) rotate(5deg);
+        transform-origin: left;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+        transform-origin: left;
+    }
+}
+
+.column-right h1 {
+    animation: fadeIn 1.2s cubic-bezier(0.42, 1, 0.58, 1);
+}
+
+/* animation column-left */
+@keyframes slideToposition {
+    0% {
+        opacity: 0;
+        transform: translateX(30%);
+        z-index: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 1;
+    }
+}
+
+.column-left {
+    animation: slideToposition 1.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+
+@media screen and (max-width:770px) {
+    .column-right h1 {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .image-container img {
+        height: 100px;
+    }
+
+    .gx-0 {
+        padding: 0;
+    }
+}
