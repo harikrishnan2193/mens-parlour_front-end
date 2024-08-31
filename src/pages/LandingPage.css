@@ -1,41 +1,48 @@
 body {
     overflow-x: hidden;
 }
+
 .banner {
     position: relative;
-    background: linear-gradient(rgba(242, 89, 206, 0.5), rgb(29, 26, 26)), url('/src/Images/Header1.jpg');
+    background: linear-gradient(rgba(209, 107, 189, 0.5), rgb(27, 24, 24)), url('/src/Images/Header1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
     overflow: hidden;
 }
-.logo{
+
+.logo {
     width: 320px;
     position: absolute;
     top: 6%;
     left: 10%;
 }
-.bannerText{
+
+.bannerText {
     text-align: center;
     color: white;
     padding-top: 250px;
 }
-.bannerText h1{
+
+.bannerText h1 {
     font-family: "Edu VIC WA NT Beginner", cursive;
     font-size: 50px;
     font-weight: 700;
     font-style: normal;
 }
-.bannerText p{
+
+.bannerText p {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
 }
-.banner-btn{
+
+.banner-btn {
     margin: 70px;
 }
-.banner-btn a{
+
+.banner-btn a {
     width: 150px;
     text-decoration: none;
     display: inline-block;
@@ -50,7 +57,8 @@ body {
     z-index: 1;
     transition: color 0.5s;
 }
-.banner-btn a span{
+
+.banner-btn a span {
     width: 0%;
     height: 100%;
     position: absolute;
@@ -60,13 +68,16 @@ body {
     z-index: -1;
     transition: 0.5s;
 }
-.banner-btn a:hover span{
+
+.banner-btn a:hover span {
     width: 100%;
 }
+
 .banner-btn a:hover {
     color: black;
 }
-.side-Nav{
+
+.side-Nav {
     width: 120px;
     height: 100vh;
     position: fixed;
@@ -74,20 +85,24 @@ body {
     top: 0;
     z-index: 2;
 }
-.offcanvas{
-    background:rgb(192, 112, 167);
+
+.offcanvas {
+    background: rgb(192, 112, 167);
 }
-.side-Nav nav ul li{
+
+.side-Nav nav ul li {
     list-style: none;
     margin: 50px 20px;
 }
-.side-Nav nav ul li a{
+
+.side-Nav nav ul li a {
     text-decoration: none;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 500;
     color: black;
 }
-#btn{
+
+#btn {
     width: 50px;
     height: 50px;
     background-color: #0c0c0c;
@@ -99,14 +114,16 @@ body {
     /* z-index: 3; */
     cursor: pointer;
 }
-@media screen and (max-width:770px){
-     .logo{
+
+@media screen and (max-width:770px) {
+    .logo {
         width: 280px;
         position: absolute;
         top: 2%;
         left: 4%;
     }
-    .banner-btn{
+
+    .banner-btn {
         margin: auto;
         display: flex;
         align-items: center;
@@ -114,14 +131,17 @@ body {
         text-align: center;
         margin-top: 40px;
     }
-    .banner-btn a{
+
+    .banner-btn a {
         margin: 10px;
     }
-    .bannerText h1{
+
+    .bannerText h1 {
         font-size: 47px;
         font-weight: 600;
     }
-    .bannerText p{
+
+    .bannerText p {
         font-size: 15px;
         font-weight: 200;
     }
@@ -129,14 +149,16 @@ body {
 
 
 /* about */
-.about{
+.about {
     background-color: white;
 }
-.about-text{
+
+.about-text {
     text-align: center;
     padding-top: 60px;
 }
-.about-text p{
+
+.about-text p {
     margin: auto;
     font-size: 20px;
     color: rgb(195, 99, 165);
@@ -145,11 +167,12 @@ body {
     z-index: 1;
     display: inline-block;
 }
-.about-text p::after{
+
+.about-text p::after {
     content: '';
     width: 50px;
     height: 35px;
-    background: linear-gradient(rgb(192, 112, 167),white);
+    background: linear-gradient(rgb(192, 112, 167), white);
     position: absolute;
     top: -20px;
     /* left: 0; */
@@ -157,78 +180,91 @@ body {
     border-top-left-radius: 35px;
     border-bottom-right-radius: 35px;
 }
-.about-text h1{
+
+.about-text h1 {
     font-size: 40px;
     font-family: "Montserrat", sans-serif;
     font-weight: 450;
     margin-bottom: 60px;
 }
-.about-img{
+
+.about-img {
     width: 100%;
     height: 500px;
-    background: 
-    linear-gradient(rgba(242, 69, 193, 0.5), rgba(107, 98, 98, 0.5)),
+    background:
+        linear-gradient(rgba(164, 83, 148, 0.5), rgba(57, 51, 51, 0.5)),
         url('../Images/chair3.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
     margin-right: 50px;
     border-radius: 20px;
 }
-.row{
+
+.row {
     padding: 0 10%;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     position: relative;
     margin-top: 5%;
 }
-.left-col{
+
+.left-col {
     flex-basis: 40%;
 }
-.right-col{
+
+.right-col {
     flex-basis: 55%;
 }
-.right-col h1{
+
+.right-col h1 {
     color: rgb(195, 99, 165);
     font-size: 55px;
     font-family: "Edu VIC WA NT Beginner";
 }
-.right-col p{
+
+.right-col p {
     color: #777;
     margin: 20px 0 70px;
 }
-@media screen and (max-width:1024px){
-    .left-col{
+
+@media screen and (max-width:1024px) {
+    .left-col {
         flex-basis: 100%;
     }
-    .right-col{
+
+    .right-col {
         flex-basis: 100%;
         margin-top: 30px;
     }
-    .right-col h1{
+
+    .right-col h1 {
         font-size: 35px;
         text-align: center;
     }
-    .row{
-    padding: 10%;
-    margin: auto;  
-}
-    
+
+    .row {
+        padding: 10%;
+        margin: auto;
+    }
+
 }
 
 
 /* services */
-.service{
+.service {
     width: 100%;
     padding: 70px 0;
     background: rgb(57, 50, 50);
 }
-.title-text{
+
+.title-text {
     text-align: center;
     padding-top: 20px;
     color: white;
 }
-.title-text p{
+
+.title-text p {
     margin: auto;
     padding-bottom: 10px;
     font-size: 20px;
@@ -238,31 +274,35 @@ body {
     z-index: 1;
     display: inline-block;
 }
-.title-text p::after{
+
+.title-text p::after {
     content: '';
     width: 50px;
     height: 35px;
-    background: linear-gradient(rgb(192, 112, 167),white);
+    background: linear-gradient(rgb(192, 112, 167), white);
     position: absolute;
     top: -24px;
     z-index: -1;
     border-top-left-radius: 35px;
     border-bottom-right-radius: 35px;
 }
-.title-text h1{
+
+.title-text h1 {
     font-size: 40px;
     font-family: "Montserrat", sans-serif;
     font-weight: 450;
     margin-bottom: 70px;
 }
-.service-box{
+
+.service-box {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: auto;
 }
-.single-service{
+
+.single-service {
     flex-basis: 48%;
     text-align: center;
     border-radius: 7px;
@@ -270,25 +310,29 @@ body {
     color: #fff;
     position: relative;
 }
-.single-service img{
+
+.single-service img {
     width: 100%;
     border-radius: 7px;
 }
-.overlay{
+
+.overlay {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     border-radius: 7px;
     cursor: pointer;
-    background: linear-gradient(rgba(0,0,0,0.5),rgb(192, 112, 167));
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(192, 112, 167));
     opacity: 0;
     transition: 1s;
 }
-.single-service:hover .overlay{
+
+.single-service:hover .overlay {
     opacity: 1;
 }
-.service-discription{
+
+.service-discription {
     width: 80%;
     position: absolute;
     bottom: 0;
@@ -297,33 +341,70 @@ body {
     transform: translateX(-50%);
     transition: 1s;
 }
-hr{
+
+hr {
     background: #fff;
     height: 2px;
     border: 0;
     margin: 15px auto;
     width: 60%;
 }
-.service-discription p{
+
+.service-discription p {
     font-size: 14px;
 }
-.single-service:hover .service-discription{
-    bottom: 25%;
+
+.single-service:hover .service-discription {
+    bottom: 20%;
     opacity: 1;
 }
-@media screen and (max-width:770px){
-    .single-service{
+
+.select-btn {
+    /* select Button */
+    width: 30%;
+    padding: 10px;
+    background: #e116c6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.select-btn:hover {
+    background-color: #b2159d;
+    color: black;
+    transform: scale(1.02);
+}
+
+
+@media screen and (max-width:770px) {
+    .single-service {
         flex-basis: 100%;
         margin-bottom: 30px;
     }
-    .service-discription p{
+
+    .service-discription p {
         font-size: 12px;
     }
-    hr{
+
+    hr {
         margin: 5px auto;
     }
-    .single-service:hover .service-discription{
+
+    /* .single-service:hover .service-discription{
         bottom: 25% !important;
+    } */
+    .single-service:hover .service-discription {
+        bottom: 10%;
+    }
+
+    .select-btn {
+        margin-top: 0px;
+        width: 30%;
+        padding: 6px;
     }
 }
-

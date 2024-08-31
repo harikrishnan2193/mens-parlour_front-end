@@ -20,7 +20,7 @@ function Header() {
                         <Nav className="mx-auto justify-content-center">
                             <Nav.Link className='me-5'>Home</Nav.Link>
                             <Nav.Link className='me-5'>Services</Nav.Link>
-                            <Nav.Link >Contact</Nav.Link>
+                            <Nav.Link >Booking</Nav.Link>
                         </Nav>
                         <button className="logout-button me-4">Logout</button>
                     </div>

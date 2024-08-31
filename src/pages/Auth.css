@@ -3,23 +3,15 @@
     animation: slideInFromBehind 1s ease-in-out forwards;
 }
 
-.login-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 95vh;
-    position: relative;
-    overflow: hidden;
-}
-
 .bg-image {
     background-image: url(../Images/chair3.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px 0px 0px 10px;
-    height: 50vh;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 2;
+    height: 51vh;
 }
 
 .bg-image-large {
@@ -27,12 +19,12 @@
     background-size: cover;
     background-position: center;
     border-radius: 10px 0px 0px 10px;
-    height: 61vh;
     z-index: 2;
+    height: 62vh;
 }
 
 .bg-image p,
-.bg-image-large {
+.bg-image-large p {
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
@@ -42,13 +34,13 @@
     background: #ffffff;
     padding: 40px;
     border-radius: 0px 10px 10px 0px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     position: relative;
-    margin-top: -10px;
     z-index: 2;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20%);
 }
+
 
 /* animation */
 @keyframes slideInFromBehind {
@@ -122,10 +114,9 @@
     transition: 0.8s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 853px) {
     .bg-image {
         border-radius: 10px 10px 0px 0px;
-        height: 50vh;
     }
 
     .login-box {
@@ -133,10 +124,10 @@
         width: 100%;
         margin-top: 0;
         transform: translateY(0);
+        opacity: 1;
     }
 
     .login-container {
-        background: linear-gradient(rgb(192, 112, 167), white);
         height: auto;
     }
 
@@ -144,18 +135,22 @@
         background-image: url(../Images/chair3.jpg);
         background-size: cover;
         border-radius: 10px 10px 0px 0px;
-        height: 61vh;
     }
 
     @keyframes slideInFromBehind {
         0% {
             opacity: 0;
             transform: translateY(20%);
+
         }
 
         100% {
             opacity: 1;
             transform: translateY(0);
         }
+    }
+
+    .animate {
+        animation: slideInFromBehind 1s;
     }
 }

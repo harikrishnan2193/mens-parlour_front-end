@@ -9,15 +9,15 @@ function AvilTime() {
         {/* Seat selection grid (like a ticket booking system) */}
         <div className="seat-row d-flex flex-column justify-content-center align-items-center">
           <div className="seat">9am</div>
-          <div className="seat">2</div>
-          <div className="seat">3</div>
-          <div className="seat">4</div>
+          <div className="seat">10am</div>
+          <div className="seat">11am</div>
+          <div className="seat">12am</div>
         </div>
         <div className="seat-row d-flex flex-column justify-content-center align-items-center">
-          <div className="seat">5</div>
-          <div className="seat">6</div>
-          <div className="seat">7</div>
-          <div className="seat">8</div>
+          <div className="seat">2am</div>
+          <div className="seat">3am</div>
+          <div className="seat">4am</div>
+          <div className="seat">5am</div>
         </div>
       </div>
     </div>
