@@ -77,7 +77,15 @@ function Auth({ register }) {
         const { email, password } = userData
 
         if (!email || !password) {
-            alert('Please fill the form completlly')
+            Swal.fire({
+                icon: "error",
+                confirmButtonColor: "rgb(192, 112, 167)",
+                title: "Oops...",
+                text: "Please fill the form completily.",
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutDown animate__faster'
+                }
+            });
         }
         else {
             const result = await loginAPI(userData)
