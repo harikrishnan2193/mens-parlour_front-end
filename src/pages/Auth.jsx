@@ -15,7 +15,7 @@ function Auth({ register }) {
         username: "",
         email: "",
         password: ""
-    })
+    })    
 
 
     //function to register

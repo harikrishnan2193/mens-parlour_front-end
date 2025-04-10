@@ -9,12 +9,12 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path='/' element={<LandingPage />}/>
-        <Route path='/login' element={<Auth/>}/>
-        <Route path='/register' element={<Auth register />}/>
-        <Route path='/booking' element={<Booking />}/>
+        <Route path='/' element={<LandingPage />} />
+        <Route path='/login' element={<Auth />} />
+        <Route path='/register' element={<Auth register />} />
+        <Route path='/booking' element={<Booking />} />
       </Routes>
-        <Footer/>
+      <Footer />
     </div>
   );
 }

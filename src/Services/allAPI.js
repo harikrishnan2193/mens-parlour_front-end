@@ -1,7 +1,7 @@
 import { BASE_URL } from "./baseURL"
 import { commonAPI } from "./commonAPI"
 
-//reegister
+//register
 export const registerAPI = async (users) => {
     return await commonAPI('POST', `${BASE_URL}/users/register`, users, "")
 }
